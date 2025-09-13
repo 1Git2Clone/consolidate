@@ -40,10 +40,11 @@ a chronological structure of directories back to a flat structure again. With
 ./consolidate <Path to year directory>/**/*
 ```
 
-> [!IMPORTANT] Please make sure you're fully aware of the consequences of
-> consolidating directories as running this script with the input as: `/**/*` or
-> `C:\**\*` with sudo/administrator permission for example would cause
-> permanent (and incredibly tedious to recover) damage to your system.
+> [!IMPORTANT]
+> Please make sure you're fully aware of the consequences of consolidating
+> directories as running this script with the input as: `/**/*` or `C:\**\*`
+> with sudo/administrator permission for example would cause permanent (and
+> incredibly tedious to recover) damage to your system.
 
 ## Implications
 
