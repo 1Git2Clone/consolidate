@@ -1,0 +1,11 @@
+[package]
+name = "flatten"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "A simple rust tool for moving all files from directories and subdirectories down to a base directory via globbing."
+
+[dependencies]
+clap = { version = "4.5.47", features = ["derive"] }
+anyhow = { version = "1.0.95", features = ["std"] }
+glob = "0.3.3"
