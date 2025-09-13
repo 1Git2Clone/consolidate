@@ -40,6 +40,18 @@ fn main() -> Result<(), Error> {
                 .ok_or(anyhow!("Expected a filename for `{}`", start_path_str))?,
         );
 
+        // NOTE: Dry run won't do the duplicate logic, but the duplicate logic is something that's
+        // well defined and can be tested separately.
+        if args.dry_run {
+            println!(
+                "[ i ] Dry run - Processed: {} => {}",
+                &abs_path.display(),
+                dest.display()
+            );
+            processed_count += 1;
+            continue;
+        }
+
         let res = std::fs::rename(&abs_path, dest);
 
         match res {

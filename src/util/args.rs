@@ -17,6 +17,10 @@ pub struct Opt {
     /// {ext} - File extension
     #[clap(long, default_value = "{stem} - ({n}){ext}", requires("on_duplicate"))]
     pub duplicate_format: String,
+
+    /// Run the application withoiut making any changes.
+    #[clap(long, action=ArgAction::SetTrue)]
+    pub dry_run: bool,
 }
 
 #[derive(ValueEnum, Clone, Debug, PartialEq)]

@@ -14,3 +14,5 @@ down to a base directory via globbing.
 
 4. Convenient to use - Instead of writing a sequence of shell commands - you
    can use **one**.
+
+5. A dry run mode to test what will happen before committing to the changes.

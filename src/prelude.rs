@@ -1,6 +1,6 @@
 pub use std::path::{Path, PathBuf};
 
-pub use clap::{Parser, ValueEnum};
+pub use clap::{ArgAction, Parser, ValueEnum};
 
 pub use anyhow::{Error, anyhow};
 
