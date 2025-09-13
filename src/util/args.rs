@@ -2,11 +2,11 @@ use crate::prelude::*;
 
 #[derive(Parser, Clone, Debug)]
 pub struct Opt {
-    /// Define a glob pattern for the flattening of the files.
+    /// Define a glob pattern for the consolidating of the files.
     #[clap(value_parser)]
     pub input: String,
 
-    /// Define the way of handling duplicate file names due to the flattening process.
+    /// Define the way of handling duplicate file names due to the consolidating process.
     #[clap(long, value_enum, default_value_t = DuplicateAction::Skip)]
     pub on_duplicate: DuplicateAction,
 
