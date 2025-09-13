@@ -11,10 +11,7 @@ pub struct Opt {
     pub on_duplicate: DuplicateAction,
 
     /// The format for handling duplicate file names (only applicable for [`DuplicateAction::Rename`])
-    /// Variables:
-    /// {stem} - file stem
-    /// {n} - count
-    /// {ext} - File extension
+    /// Variables: {stem} - file stem / {n} - count / {ext} - File extension
     #[clap(long, default_value = "{stem} - ({n}){ext}", requires("on_duplicate"))]
     pub duplicate_format: String,
 
